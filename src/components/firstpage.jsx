@@ -1,15 +1,12 @@
 import React from "react";
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+import Brand from "./Brand";
 
 function FirstPage() {
     return (
         <div class="fPage">
 
-            <div class="brand">
-                <img src="/images/brand.png" alt="Schoolbook" class="center" />
-
-                <p class="inside">Made with Love by Jhoker</p>
-            </div>
+            <Brand />
 
             <p class="pa">Best place to post your school pics</p>
 
