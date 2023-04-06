@@ -1,17 +1,17 @@
 import React from "react";
 import Header from "./Header";
-import Brand from "./Brand";
 import Navigation from "./Navigation";
 
 function Home() {
   return (
     <div className="container">
+      <div className="navigation-section">
+      <Header />
       <Navigation />
-      <Brand />
+      </div>
+      
       <div className="homeContainer">
-        <Header />
-
-        <div className="body">
+      
           <div className="subBody">
             <img className="profile" src="/images/profile.jpg" alt="profile" />
             <div className="text">
@@ -19,12 +19,11 @@ function Home() {
               <h5>Jhoker</h5>
             </div>
           </div>
-          <hr />
+          
           <div className="imageBody">
             <img className="banner" src="/images/banner.jpg" alt="post pic" />
             <p>I am here!!! Bankai!!!</p>
           </div>
-        </div>
       </div>
     </div>
   );

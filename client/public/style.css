@@ -1,6 +1,13 @@
 body {
     font-family: cursive;
-    background-color: #eeff01;
+    /* background-color: orange; */
+}
+
+/*BAND CSS*/
+
+.banner {
+    width: 60%;
+    border-radius: 10px;
 }
 
 .brand {
@@ -9,9 +16,9 @@ body {
     top: 0;
     height: 693px;
     width: 500px;
-    background-color: #99e223;
-    border: 1px solid #99e223;
-    border-radius: 400px;
+    background: linear-gradient(orange , yellow ,red );
+    border: 1px solid linear-gradient(orange , yellow ,red  );
+    border-radius: 10px;
     border-bottom-left-radius: 0;
     border-top-left-radius: 0;
     
@@ -25,9 +32,9 @@ body {
 
 .inside {
     margin-left: 150px;
-    color: blue;
+    color: whitesmoke;
     font-weight: bold;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     margin-top: 430px;
 }
 
@@ -38,8 +45,14 @@ body {
     padding: 10px;
     border-radius: 10px;
     font-weight: bold;
-    font-size: 1.5rem;
-    background-color: yellow;
+    font-size: 1.1rem;
+    color: whitesmoke;
+    border: 1px solid orangered;
+    background-color: orangered;
+}
+
+button:hover {
+    cursor: pointer;
 }
 
 .register {
@@ -56,43 +69,46 @@ body {
     position: absolute;
     top: 100px;
     left: 680px;
-    font-size: 2.8rem;
+    font-size: 2rem;
     font-weight: bold;
     color: #413b3b;
 }
+
+/*REGISTER CSS*/
 
 .registerContainer {
     font-family: cursive;
     position: absolute;
     top: 50px;
     left: 450px;
-    border: 2px solid #ff0000;
-    border-radius: 10px;
-    height: 600px;
+    /* border: 2px solid #ff0000; */
+    /* border-radius: 10px; */
+    height: 620px;
     width: 500px;
 }
 
 h1 {
-    font-weight: bold;
     margin-left: 200px;
 }
 
 label {
     color: #ff0000;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-left: 50px;
 }
 
 input {
     margin-left: 50px;
     width: 400px;
+    height: 25px;
     border-top: 0;
     border-left: 0;
     border-right: 0;
+    border-bottom: 0;
     background-color: black;
     color: whitesmoke;
     border-radius: 5px;
-
+    font-family: cursive;
 }
 
 .cont {
@@ -101,33 +117,32 @@ input {
 }
 
 .newButton {
-    font-weight: bold;
+    font-family: cursive;
     margin-left: 200px;
     padding: 7px;
     width: 100px;
     border-radius: 10px;
     background-color: #000000;
+    border: 1px solid black;
     color: #ff0000;
 }
+
+/*HOME CSS*/
 
 .homeContainer {
     position: absolute;
     border-radius: 50px;
-    top: 15px;
-    left: 600px;
-    border: 2px solid whitesmoke;
+    top: 25px;
+    left: 500px;
     height: 670px;
     width: 400px;
-    background-color: black;
-    color: whitesmoke;
 }
 
 .header {
+    display: flex;
+    justify-content: start;
     position: relative;
-    display: inline-block;
-    border-radius: 10px;
-    text-align: center;
-    margin-left: -100px;
+    right: 140px;
     color: red;
 }
 
@@ -149,22 +164,27 @@ input {
 
 .imageBody {
     margin-top: 70px;
-    font-size: 1.7rem;
     text-align: center;
-}
-
-.banner {
-    width: 60%;
-    border-radius: 10px;
 }
 
 .navContainer {
     position: absolute;
-    left: 1050px;
-    font-size: 2.7rem;
+    font-size: 1.5rem;
+    color: black;
+}
+
+.navigation-section {
+    position: absolute;
+    top: 25px;
+    left: 70px;
+    border: 1px solid red;
+    border-radius: 5px;
+    height: 600px;
+    width: 300px;
 }
 
 li {
-    display: inline-block;
+    display: block;
     margin: 20px;
+    font-size: 1rem;
 }
