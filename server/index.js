@@ -1,21 +1,36 @@
 const express = require('express')
-const cors = require('cors')
-const RegisterModel = require('./models/mongo')
-
 const app = express()
+const cors = require('cors')
+const bodyParser = require('body-parser')
+const mongoose = require('mongoose')
+const RegisterModel = require('./models/registerdb')
 
-app.use(cors)
-app.use(express.json())
+app.use(cors());
+app.use(express.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 
 //////DATABASE CONNECTION
 
-mongoose.connect("mongodb://localhost:27017/schoolbookDB", {useNewUrlParser: true})
-// .then(() => {
-//     console.log("mongodb connected")
-// })
-// .catch(() => {
-//     console.log("failed")
-// })
+mongoose.connect("mongodb://127.0.0.1/schoolbookDB", {useNewUrlParser: true})
+
+app.post("/userinfos", async (req, res) => {
+    const name = req.body.name;
+    const school = req.body.school;
+    const nicky = req.body.nicky;
+    const email = req.body.email;
+    const password = req.body.password;
+
+    const userinfos = new RegisterModel ({
+        name: name,
+        school: school,
+        nicky: nicky,
+        email: email,
+        password: password
+    });
+
+    await userinfos.save();
+    res.send("Successful")
+})
 
 
 

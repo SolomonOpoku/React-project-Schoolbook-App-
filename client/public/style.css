@@ -1,6 +1,5 @@
 body {
     font-family: cursive;
-    /* background-color: orange; */
 }
 
 /*BAND CSS*/
@@ -17,7 +16,7 @@ body {
     height: 693px;
     width: 500px;
     background: linear-gradient(orange , yellow ,red );
-    border: 1px solid linear-gradient(orange , yellow ,red  );
+    border: 1px solid linear-gradient(orange , yellow ,red );
     border-radius: 10px;
     border-bottom-left-radius: 0;
     border-top-left-radius: 0;
@@ -53,6 +52,10 @@ body {
 
 button:hover {
     cursor: pointer;
+    color: black;
+    background: red;
+    border: 1px solid red;
+    font-weight: bold;
 }
 
 .register {
@@ -79,10 +82,8 @@ button:hover {
 .registerContainer {
     font-family: cursive;
     position: absolute;
-    top: 50px;
+    top: 40px;
     left: 450px;
-    /* border: 2px solid #ff0000; */
-    /* border-radius: 10px; */
     height: 620px;
     width: 500px;
 }
@@ -93,14 +94,14 @@ h1 {
 
 label {
     color: #ff0000;
-    font-size: 1.2rem;
+    font-size: 1.7rem;
     margin-left: 50px;
 }
 
-input {
+.registerInputs {
     margin-left: 50px;
     width: 400px;
-    height: 25px;
+    height: 35px;
     border-top: 0;
     border-left: 0;
     border-right: 0;
@@ -187,4 +188,42 @@ li {
     display: block;
     margin: 20px;
     font-size: 1rem;
+}
+
+/*POST CSS*/
+
+.post {
+    text-align: center;
+}
+
+form {
+    border: 1px solid black;
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    text-align: center;
+    left: 540px;
+    /* margin: 10px; */
+}
+
+.file {
+    margin-top: 20px;
+    margin-left: 110px;
+}
+
+.postLabel {
+    margin-top: 10px;
+    font-size: 2rem;
+}
+
+.postInput {
+    margin-top: 25px;
+    height: 100px;
+    width: 300px;
+}
+
+.postButton {
+    display: block;
+    margin-top: 50px;
+    margin-left: 200px;
 }

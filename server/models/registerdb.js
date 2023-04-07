@@ -1,4 +1,4 @@
-const mongoose = require("mongoose")
+const mongoose = require("mongoose");
 
 const RegisterSchema = new mongoose.Schema({
     name: {
@@ -6,6 +6,10 @@ const RegisterSchema = new mongoose.Schema({
         required: true
     },
     school: {
+        type: String,
+        required: true
+    },
+    nicky: {
         type: String,
         required: true
     },

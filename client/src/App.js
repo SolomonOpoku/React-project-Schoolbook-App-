@@ -7,7 +7,8 @@ import Post from "./components/Post";
 import Profile from "./components/Profile";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-function App() {
+function App(props) {
+  
   return (
     <BrowserRouter>
       <Routes>
