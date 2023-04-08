@@ -5,16 +5,16 @@ function Login() {
     return (
         <div className='registerContainer cont'>
             <div className='login'>
-                <h1>Login</h1>
+                <h1 id='register'>Login</h1>
             </div>
 
-            <label>Nicky</label>
+            <label className='registerLabel'>Nicky</label>
             <br />
-            <input type='text' />
+            <input type='text' className="registerInputs"/>
             <br /> <br />
-            <label>Password</label>
+            <label className='registerLabel'>Password</label>
             <br />
-            <input type='password' />
+            <input type='password' className="registerInputs"/>
 
             <br /><br /><br />
 

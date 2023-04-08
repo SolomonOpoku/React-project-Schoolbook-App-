@@ -22,9 +22,9 @@ function Register(props) {
   return (
     <div className="registerContainer">
       <div className="register">
-        <h1>Register</h1>
+        <h1 id="register" >Register</h1>
       </div>
-      <label>Name</label>
+      <label className="registerLabel">Name</label>
       <br />
       <input
       className="registerInputs"
@@ -35,7 +35,7 @@ function Register(props) {
       />
       <br />
       <br />
-      <label>School</label>
+      <label className="registerLabel">School</label>
       <br />
       <input
       className="registerInputs"
@@ -46,7 +46,7 @@ function Register(props) {
       />
       <br />
       <br />
-      <label>Nicky</label>
+      <label className="registerLabel">Nicky</label>
       <br />
       <input
       className="registerInputs"
@@ -57,7 +57,7 @@ function Register(props) {
       />
       <br />
       <br />
-      <label>Email</label>
+      <label className="registerLabel">Email</label>
       <br />
       <input
       className="registerInputs"
@@ -68,7 +68,7 @@ function Register(props) {
       />
       <br />
       <br />
-      <label>Password</label>
+      <label className="registerLabel">Password</label>
       <br />
       <input
       className="registerInputs"
@@ -79,7 +79,7 @@ function Register(props) {
       />
       <br />
       <br />
-      <label>Confirm Password</label>
+      <label className="registerLabel">Confirm Password</label>
       <br />
       <input
       className="registerInputs"

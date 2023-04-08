@@ -8,7 +8,7 @@ function FirstPage() {
 
             <Brand />
 
-            <p class="pa">Best place to post your school pics</p>
+            <p class="firstPageParagraph">Best place to post your school pics</p>
 
             <div class="button">
                 <Link to="/register"><button type="submit" class="firstPage register">Register</button></Link>

@@ -1,13 +1,13 @@
 import React from "react";
-import Header from "./Header";
 import Navigation from "./Navigation";
+import Notification from "./Notification";
 
 function Home() {
   return (
     <div className="container">
       <div className="navigation-section">
-      <Header />
       <Navigation />
+      <Notification />
       </div>
       
       <div className="homeContainer">
@@ -24,6 +24,7 @@ function Home() {
             <img className="banner" src="/images/banner.jpg" alt="post pic" />
             <p>I am here!!! Bankai!!!</p>
           </div>
+          <hr />
       </div>
     </div>
   );

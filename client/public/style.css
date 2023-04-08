@@ -1,5 +1,13 @@
 body {
     font-family: cursive;
+    background-color: whitesmoke;
+}
+
+#logo {
+    width: 15%;
+    position: relative;
+    top: 10px;
+    left: 200px;
 }
 
 /*BAND CSS*/
@@ -15,8 +23,7 @@ body {
     top: 0;
     height: 693px;
     width: 500px;
-    background: linear-gradient(orange , yellow ,red );
-    border: 1px solid linear-gradient(orange , yellow ,red );
+    background: #5d686e;
     border-radius: 10px;
     border-bottom-left-radius: 0;
     border-top-left-radius: 0;
@@ -31,9 +38,9 @@ body {
 
 .inside {
     margin-left: 150px;
-    color: whitesmoke;
+    color: #303079;
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     margin-top: 430px;
 }
 
@@ -44,17 +51,17 @@ body {
     padding: 10px;
     border-radius: 10px;
     font-weight: bold;
-    font-size: 1.1rem;
-    color: whitesmoke;
-    border: 1px solid orangered;
-    background-color: orangered;
+    font-size: 1.5rem;
+    color: #303079;
+    border: 2px solid #000000;
+    background-color: #ffffff;
 }
 
 button:hover {
     cursor: pointer;
-    color: black;
-    background: red;
-    border: 1px solid red;
+    color: whitesmoke;
+    background: black;
+    border: 1px solid #2535c2;
     font-weight: bold;
 }
 
@@ -68,13 +75,13 @@ button:hover {
     left: 700px;
 }
 
-.pa {
+.firstPageParagraph {
     position: absolute;
     top: 100px;
     left: 680px;
-    font-size: 2rem;
+    font-size: 2.4rem;
     font-weight: bold;
-    color: #413b3b;
+    color: #303079;
 }
 
 /*REGISTER CSS*/
@@ -88,12 +95,13 @@ button:hover {
     width: 500px;
 }
 
-h1 {
+#register {
+    color: #303079;
     margin-left: 200px;
 }
 
-label {
-    color: #ff0000;
+.registerLabel {
+    color: #303079;
     font-size: 1.7rem;
     margin-left: 50px;
 }
@@ -122,10 +130,11 @@ label {
     margin-left: 200px;
     padding: 7px;
     width: 100px;
+    font-weight: bold;
     border-radius: 10px;
-    background-color: #000000;
-    border: 1px solid black;
-    color: #ff0000;
+    background-color: #ffffff;
+    border: 2px solid black;
+    color: #303079;
 }
 
 /*HOME CSS*/
@@ -168,12 +177,6 @@ label {
     text-align: center;
 }
 
-.navContainer {
-    position: absolute;
-    font-size: 1.5rem;
-    color: black;
-}
-
 .navigation-section {
     position: absolute;
     top: 25px;
@@ -184,10 +187,32 @@ label {
     width: 300px;
 }
 
+/*NAVIGATION CSS*/
+
 li {
     display: block;
     margin: 20px;
-    font-size: 1rem;
+    font-size: 1.5rem;
+}
+
+.navlinks {
+    margin-top: 50px;
+}
+
+span {
+    margin: 10px;
+}
+
+/*NOTIFICATION CSS*/
+
+.notification-section {
+    position: absolute;
+    left: 930px;
+    top: 5px;
+    border: 1px solid red;
+    border-radius: 5px;
+    height: 600px;
+    width: 300px;
 }
 
 /*POST CSS*/
@@ -198,11 +223,12 @@ li {
 
 form {
     border: 1px solid black;
-    height: 400px;
+    height: 500px;
     width: 400px;
+    border-radius: 10px;
     position: absolute;
     text-align: center;
-    left: 540px;
+    left: 500px;
     /* margin: 10px; */
 }
 
@@ -216,14 +242,69 @@ form {
     font-size: 2rem;
 }
 
-.postInput {
+textarea {
     margin-top: 25px;
     height: 100px;
     width: 300px;
+    border-radius: 10px;
 }
 
 .postButton {
     display: block;
     margin-top: 50px;
-    margin-left: 200px;
+    margin-left: 150px;
+    
+}
+
+/*PROFILE CSS*/
+
+.imageProfile {
+    position: absolute;
+    left: 500px;
+    top: 100px;
+}
+
+#imgProfile {
+    width: 50%;
+    border-radius: 120px;
+}
+
+#imgProfile:hover {
+    animation: rotate 1s infinite;
+}
+
+@keyframes rotate {
+    0% {
+        rotate: 36deg;
+    }
+    15% {
+        rotate: 72deg;
+    }
+    25% {
+        rotate: 108deg;
+    }
+    35% {
+        rotate: 144deg;
+    }
+    45% {
+        rotate: 180deg;
+    }
+    55% {
+        rotate: 216deg;
+    }
+    65% {
+        rotate: 252deg;
+    }
+    75% {
+        rotate: 288deg;
+    }
+    85% {
+        rotate: 324deg;
+    }
+    95% {
+        rotate: 360deg;
+    }
+    /* 100% {
+        rotate: 0;
+    } */
 }
